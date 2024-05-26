@@ -1,3 +1,2 @@
 
-recurso glue python shell
-
+recurso lambda
