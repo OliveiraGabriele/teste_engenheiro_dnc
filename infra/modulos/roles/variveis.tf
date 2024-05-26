@@ -1,0 +1,1 @@
+variaveis default do recurso

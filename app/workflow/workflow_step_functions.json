@@ -1,0 +1,14 @@
+{
+	  "Comment": "A description of my state machine",
+	    "StartAt": "start job",
+	      "States": {
+		          "start job": {
+				        "Type": "Task",
+					      "Resource": "arn:aws:states:::glue:startJobRun",
+					            "Parameters": {
+							            "JobName": "job_etl_data"
+								          },
+									        "End": true
+										    }
+										      }
+}

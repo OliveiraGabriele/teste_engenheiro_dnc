@@ -1,0 +1,1 @@
+ variaveis para o modulo
