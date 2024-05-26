@@ -26,9 +26,9 @@ AWS Glue Catalog, Amazon Athena.
 # Configuração e Execução
 
 Pré-requisitos
-Python 3.8 ou superior
-AWS CLI configurado
-Conta na AWS com permissões para Lambda, S3, Step Functions e Glue
+Python 3.8 ou superior, 
+AWS CLI configurado, 
+Conta na AWS com permissões para Lambda, S3, Step Functions e Glue,
 Chave de API da OpenWeatherMap:https://openweathermap.org/api
 
 
@@ -36,6 +36,7 @@ Chave de API da OpenWeatherMap:https://openweathermap.org/api
 Configure as seguintes variáveis de ambiente no AWS Lambda:
 
 API_KEY - Sua chave de API da OpenWeatherMap.
+
 S3_BUCKET - Nome do bucket S3 onde os dados serão armazenados.
 
 # Código de Ingestão de Dados (Lambda Function):
@@ -44,6 +45,11 @@ Código do Lambda para coletar dados de clima da OpenWeatherMap
 # Código de ETL
 Código para execução de ETL e escrita no Amazon S3
 
+# Código de workflow
+ Código que define a sequência de etapas para realizar o processo de ETL (Extração, Transformação e Carga) dos dados coletados da OpenWeatherMap. Ele inicia um job no AWS Glue, que executa as tarefas de transformação e carga dos dados no Amazon S3. Essa abordagem automatizada e escalável simplifica a execução do ETL.
+
+# Scripts SQL para Análise de Dados
+Contem alguns scripts SQL que podem ser úteis para análise dos dados armazenados no Amazon S3. As consultas podem ser executados no Amazon Athena para extrair insights valiosos dos dados.
 
 Arquitetura do Sistema
 A seguir está o diagrama da arquitetura do sistema:
