@@ -28,7 +28,7 @@ AWS Glue Catalog, Amazon Athena.
 Pré-requisitos
 Python 3.8 ou superior, 
 AWS CLI configurado, 
-Conta na AWS com permissões para Lambda, S3, Step Functions e Glue,
+Conta na AWS com as devidas permissões para as ferramenas escolhidas,
 Chave de API da OpenWeatherMap:https://openweathermap.org/api
 
 
@@ -74,4 +74,4 @@ Para análise de dados, optei por utilizar AWS Glue Catalog para metadados e Ama
 
 
 
-Este README fornece uma visão geral da solução proposta para o desafio da Zebrinha Azul, incluindo as ferramentas e tecnologias utilizada
+Este README fornece uma visão geral da solução proposta para o desafio da Zebrinha Azul, incluindo as ferramentas e tecnologias utilizada. 
