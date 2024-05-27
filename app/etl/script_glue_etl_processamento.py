@@ -21,7 +21,7 @@ def parse_date(df):
     return df
     
 def process_data(df):
-    print('testando essa porra aqui')
+    print('testando essa aqui')
     #cria aqui as regras que pedem no escopo do projeto
     df = parse_date(df)
     return df
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     caminho_bucket_entrada = "dados_entrada/clima/anomesdia="
     dias = ["20240505", "20240506", "20240507","20240508","20240509","20240510","20240511","20240512","20240513","20240514","20240515","20240516","20240517","20240518","20240519","20240520","20240521","20240522","20240523","20240524"]
 
-    db_destino = 'db_workspace_shared_account_587791419323'
+    db_destino = 'db_workspace_shared_account'
     tb_destino = 'tb_dados_api_openweathermap'
     caminho_bucket_saida = f"dados_saida/clima_processado/{tb_destino}/anomesdia="
     
